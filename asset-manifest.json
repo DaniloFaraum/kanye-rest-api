@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kanye-rest-api/static/css/main.0b54ad20.css",
+    "main.js": "/kanye-rest-api/static/js/main.31ac33ac.js",
+    "index.html": "/kanye-rest-api/index.html",
+    "static/media/retry.svg": "/kanye-rest-api/static/media/retry.807a56304b40e62226d971dfff6848e6.svg",
+    "main.0b54ad20.css.map": "/kanye-rest-api/static/css/main.0b54ad20.css.map",
+    "main.31ac33ac.js.map": "/kanye-rest-api/static/js/main.31ac33ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b54ad20.css",
+    "static/js/main.31ac33ac.js"
+  ]
+}
