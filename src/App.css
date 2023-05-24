@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@1,300&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spectral SC', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: #F8E7D3;
+    height: 100vh;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.happy{
+    z-index: -1;
+    position: absolute;
+    top: -10px;
+    right: -30px;
+    height: 420px;
+    width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.angry{
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    z-index: -1;
+    height: 420px;
+    width: auto;
+    transform: scaleX(-1);
 }
 
-.App-link {
-  color: #61dafb;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+    font-family: 'Staatliches', cursive;
+    font-size: 128px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.quote-space{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.quote{
+    background-color: #EFC99E;
+    border-radius: 20px;
+    width: 80%;
+    font-size: 48px;
+    padding: 30px 0;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.kanye-west{
+    text-align: end;
+    margin-right: 80px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7FB1EB;
+    transition: all 0.5s;
+    padding: 20px 0;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Staatliches', cursive;
+    font-size: 48px;
+    box-shadow: 18px 15px 14px rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover{
+    transform: translateY(-10px);
+}
+
+.button:active{
+    transform: translateY(+12px);
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 64px;
+    }
+    .quote{
+        font-size: 30px;
+    }
+    .happy{
+        top: 80px;
+        right: 40px;
+        height: 80px;
+    }
+    .angry{
+        display: none;
+    }
+    .button{
+        position: absolute;
+        bottom: 20px;
+    }
 }
